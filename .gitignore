@@ -27,3 +27,5 @@ Application Descriptor
 
 # PDT-specific
 .buildpath
+/build/
+/dist/
