@@ -1,5 +1,7 @@
 # Inspedio Game Engine
 
+[![Build Status](https://img.shields.io/github/workflow/status/ngawung/inspedio/CI/master)](https://github.com/ngawung/Inspedio/actions)
+
 Game engine for j2me.
 
 this engine originaly written by [Wafi Harowa](https://github.com/hyude) (a.k.a Hyude). im just editing this game engine to suit my project
