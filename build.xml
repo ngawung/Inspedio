@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<project name="Inspedio" default="all" basedir=".">
+
+    <property file="build.properties"/>
+
+    <taskdef resource="antenna.properties" classpath="${antenna.lib}"/>
+
+    <target name="all">
+
+        <mkdir dir="build"/>
+        <mkdir dir="dist"/>
+
+        <!-- create jad -->
+        <wtkjad jadfile="Manifest"
+                update="true"
+                autoversion="false"/>
+
+        <!-- Compile -->
+        <wtkbuild destdir="build" 
+                    srcdir="src" 
+                    source="1.3" 
+                    target="1.3" 
+                    preverify="false"/>
+
+        <!-- package jar -->
+        <wtkpackage jarfile="dist/${midlet.name}.jar"
+                    jadfile="Manifest" 
+                    obfuscate="false" 
+                    preverify="true" 
+                    autoversion="false">
+            
+            <!-- include -->
+            <fileset dir="build"/>
+            <fileset dir="res"/>
+
+        </wtkpackage>
+    	        
+    </target>
+
+</project>

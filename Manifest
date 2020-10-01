@@ -1,0 +1,7 @@
+Lib-name: Inspedio Game Engine
+Lib-author: Inspedio Studio
+Maintance-by: Ferdian
+Github-repo: https://github.com/ngawung/Inspedio
+MIDlet-Version: 1.0.3
+MIDlet-Jar-URL: Inspedio.jar
+MIDlet-Jar-Size: 104861
